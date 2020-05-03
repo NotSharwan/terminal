@@ -1,34 +1,77 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" style=" scroll-behavior: smooth;">
 
 <head>
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="keywords" content="">
+
+    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <title>Sharwan Solanki</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script defer src="js/particles.js"></script>
+    <script defer src="js/script.js"></script>
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Sharwan Solanki">
+    <meta name="keywords" content="sharwan,solanki, sharwan solanki,notsharwan, coder, coding,">
+    <link
+        href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAChkuo/VyrL/3Na1/+Hg7BQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAfnarHFMjvP4/BMD/US2//6CU5qQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACPg+FiRwnC/0IBw/9FFsH/mIjevgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFAiyfE+Ar7/QQK//1Mgwv97cK94AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALK13wFQI8byQwO9/0MAxf87Ar7/d1vU3AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAdMxjQAjD/0MAxf9AA73/OwG//1Ijy/+Zlr1GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB4a7AuUCHB/zsBu/8zA5//MgSZ/z4Cv/9DDMT/pJbrnwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACGf7QRVy7J8kIBxP8vBJP/CwMu/wsDJv8vAo//PQLA/3NV1/NsbHgIAAAAAAAAAAAAAAAAAAAAAAAAAAAwK0QWZ0fN0zwDuP9CArz/JAF5/wMDC/8BAgf/IwFz/0AEu/8/DcD/jHnZwVJOdUhJRWY/urXuXLSs0jMAAAAAXlSIQUEJx/9BAL7/RAG8/zUCpP8XAlL/FQFM/zIEn/8/A7v/RADH/0AHwf9OKb//USfH/0wpvf+ol+bsAAAAAIh01nA9AMH/RAHA/0YBxP88AMH/OAK2/zoBt/88AcT/PwLC/0IAu/9GAMX/RgPA/z0Dvf+Gadv8NTJADQAAAAB2WdOiPwC4/0AAwv9GBcL/UifB/1Ehxf5GCcX/Qwa8/0MBv/8/A8f/PAS+/0oWw/+Sg+XJMjI+DwAAAAAAAAAAeVjPokABv/9RJML/q6HlhTAuPhWfoLsWu7TvYZaG3sV6YtD/blTM/4Vy0vfEvftNCwsOCAAAAAAAAAAAAAAAAIVq1H46BcP/nY7ktAsKDwgAAAAAAAAAAAAAAAAAAAAAJiYtCiclLgobGx4DAAAAAAAAAAAAAAAAAAAAAAAAAACkkuBRUzLL/8XD7SAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMS5FEZmQ6O8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8/8AAPD/AAD4fwAA+H8AAPg/AAD4PwAA8B8AAOAfAADADwAAwAAAAMABAACAAwAAhw8AAM//AADf/wAA3/8AAA=="
+        rel="icon" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+    <!--    StyleSheet-->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
 
     <title>Sharwan Solanki</title>
-
-        <!-- Website CSS -->
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
-    <section id="banner" class="banner loading">
-        <div class="video-background">
-            <div class="video-foreground" id="ytvideo">
+<body style="overflow-x: hidden; position: relative; margin: 0; padding: 0; font-family: 'Ubuntu', sans-serif;"
+    onload="socialWid()">
+    <!-- *****************************************************HOME***************************************************** -->
+    <div style="width: 100vw; height: 100vh; background-color: #000000;">
+        <canvas id="canvas" style="position: absolute; height: 100vh; width: 100vw;"></canvas>
+        <div id="home" style="position: relative; width: inherit; height: inherit;">
+            <div style="width: 100vw; height: 100vh; position: absolute;">
+                <div class="overlay" id="nav">
+                    <nav>
+                        <div class="nav-brand">
+                            <a title="All major coding sites Handle" href="/" class="brand">NotSharwan</a>
+                        </div>
+                    </nav>
+                </div>
+                <div style="top: 35%; position: relative;">
+                    <div class="home-content">
+                        <div class="details">
+                            <h1>Sharwan Solanki</h1>
+                            <h2 id="changeText">CS Undergrad.</h2>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+    </div>
 
-    </section>
+    <div id="soc" class="social">
+        <span><a target="_blank" href="https://github.com/notsharwan"><i class="fa fa-github"
+                    style="font-size: 2.5rem; color: #ffffff"></i></a></span>
+        <span><a target="_blank" href="https://www.linkedin.com/in/notsharwan/"><i class="fa fa-linkedin-square"
+                    style="font-size: 2.5rem; color: #0077b5"></i></a></span>
+        <span><a target="_blank" href="https://www.facebook.com/notsharwan"><i class="fa fa-facebook-square"
+                    style="font-size: 2.5rem; color: #4267b2"></i></a></span>
+        <span><a target="_blank" href="https://twitter.com/notsharwan"><i class="fa fa-twitter"
+                    style="font-size: 2.5rem; color: #1da1f2"></i></a></span>
+        <span><a target="_blank" href="https://instagram.com/sharrwann"><i class="fa fa-instagram"
+                    style="font-size: 2.5rem; color:#3f729b"></i></a></span>
+        <span><a target="_blank" href="mailto:sharwansolanki01@gmail.com"><i class="fa fa-google"
+                    style="font-size: 2.5rem; color: #cf5e54"></i></a></span>
+    </div>
 
-    <!-- Javascript code -->
-    <script async src="https://www.youtube.com/iframe_api"></script>
-    <script async src="js/app.js"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-145079673-1');
+    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145079673-1"></script>
 </body>
 
 </html>
