@@ -55,7 +55,7 @@ const key = function keyEvent(e) {
     return;
   }
 
-  if (e.key === "Enter") {
+  if (e.key === "Enter" || e.key ==='Return') {
     execute(input);
     userInput.innerHTML = "";
     return;
