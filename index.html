@@ -1,72 +1,89 @@
-<!doctype html>
-<html lang="en" style=" scroll-behavior: smooth;">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
+  <meta charset="UTF-8">
+  <title>Sharwan Solanki</title>
+  <meta charset="utf-8">
 
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <script defer src="js/particles.js"></script>
-    <script defer src="js/script.js"></script>
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta name="description" content="Sharwan Solanki">
-    <meta name="keywords" content="sharwan,solanki, sharwan solanki,notsharwan, coder, coding,">
-    <link id="page_favicon" href="data:image/x-icon;base64,R0lGODlhEAAQAPEAAAAAADY2Ngz3KAAAACH5BAkFAAMAIf8LTkVUU0NBUEUyLjADAQAAACwAAAAAEAAQAAAC59w2MzMzM8YYY4wxxhhjjDEMwzAMwzAMwzAMwzAMwzAMwzAMwzAMwzAYDAaDQSAQCAQCgUAgEAgEAoNBQCAQCAQAAAAAAAACg0EAIBAAAAAAAAAAAAKDQUAgEAAAAAAAAAAAEDAwEAAgIAAAAAAAAAAAABAwMBAAICAAAAAAAAAAAAAQMDAQAAAAAAAAAAAAAAAAEDAwECAgIAAAAAAAAAAAABAwMBAQEBAQEBAQEBAQEBAQMDAwMDAwMDAQEDAwMDAwMDAwMDAwMDAwEBAwMDAwMDAwMDAwMBAQEBAQEBAQYMCAAQMKAAAh+QQJBQADACwAAAAAEAAQAAAC59w2MzMzM8YYY4wxxhhjjDEMwzAMwzAMwzAMwzAMwzAMwzAMwzAMwzAYDAaDQSAQCAQCgUAgEAgEAoNBACAQAAAAAAAAAAACg0FAIBAAAAAAAAAAAAKDQQAgEAAAAAAAAAAAEDAwEAAgIAAAAAAAAAAAABAwMBAAAAAAAAAAAAAAAAAQMDAQICAgAAAAAAAAAAAAEDAwECAAAAAAAAAAAAAAABAwMBAQEBAQEBAQEBAQEBAQMDAwMDAwMDAQEDAwMDAwMDAwMDAwMDAwEBAwMDAwMDAwMDAwMBAQEBAQEBAQYMCAAQMKAAAh+QQJBQADACwAAAAAEAAQAAAC59w2MzMzM8YYY4wxxhhjjDEMwzAMwzAMwzAMwzAMwzAMwzAMwzAMwzAYDAaDQSAQCAQCgUAgEAgEAoNBQCAQAAAAAAAAAAACg0EAIBAAAAAAAAAAAAKDQQAgEAAAAAAAAAAAEDAwEAAAAAAAAAAAAAAAABAwMBAgICAAAAAAAAAAAAAQMDAQIAAAAAAAAAAAAAAAEDAwECAgAAAAAAAAAAAAABAwMBAQEBAQEBAQEBAQEBAQMDAwMDAwMDAQEDAwMDAwMDAwMDAwMDAwEBAwMDAwMDAwMDAwMBAQEBAQEBAQYMCAAQMKAAAh+QQJBQADACwAAAAAEAAQAAAC59w2MzMzM8YYY4wxxhhjjDEMwzAMwzAMwzAMwzAMwzAMwzAMwzAMwzAYDAaDQSAQCAQCgUAgEAgEAoNBACAQAAAAAAAAAAACg0EAIBAAAAAAAAAAAAKDQQAAAAAAAAAAAAAAEDAwECAgIAAAAAAAAAAAABAwMBAgAAAAAAAAAAAAAAAQMDAQICAAAAAAAAAAAAAAEDAwECAgICAgIAAAAAAAABAwMBAQEBAQEBAQEBAQEBAQMDAwMDAwMDAQEDAwMDAwMDAwMDAwMDAwEBAwMDAwMDAwMDAwMBAQEBAQEBAQYMCAAQMKAAAh+QQJBQADACwAAAAAEAAQAAAC59w2MzMzM8YYY4wxxhhjjDEMwzAMwzAMwzAMwzAMwzAMwzAMwzAMwzAYDAaDQSAQCAQCgUAgEAgEAoNBACAQAAAAAAAAAAACg0EAAAAAAAAAAAAAAAKDQUAgEAAAAAAAAAAAEDAwECAAAAAAAAAAAAAAABAwMBAgIAAAAAAAAAAAAAAQMDAQICAgICAgAAAAAAAAEDAwEAAAAAAAAAAAAAAAABAwMBAQEBAQEBAQEBAQEBAQMDAwMDAwMDAQEDAwMDAwMDAwMDAwMDAwEBAwMDAwMDAwMDAwMBAQEBAQEBAQYMCAAQMKAAAh+QQJBQADACwAAAAAEAAQAAAC59w2MzMzM8YYY4wxxhhjjDEMwzAMwzAMwzAMwzAMwzAMwzAMwzAMwzAYDAaDQSAQCAQCgUAgEAgEAoNBAAAAAAAAAAAAAAACg0FAIBAAAAAAAAAAAAKDQUAAAAAAAAAAAAAAEDAwECAgAAAAAAAAAAAAABAwMBAgICAgICAAAAAAAAAQMDAQAAAAAAAAAAAAAAAAEDAwECAgICAgAAAAAAAAABAwMBAQEBAQEBAQEBAQEBAQMDAwMDAwMDAQEDAwMDAwMDAwMDAwMDAwEBAwMDAwMDAwMDAwMBAQEBAQEBAQYMCAAQMKAAAh+QQJBQADACwAAAAAEAAQAAAC59w2MzMzM8YYY4wxxhhjjDEMwzAMwzAMwzAMwzAMwzAMwzAMwzAMwzAYDAaDQSAQCAQCgUAgEAgEAoNBQCAQAAAAAAAAAAACg0FAAAAAAAAAAAAAAAKDQUAgAAAAAAAAAAAAEDAwECAgICAgIAAAAAAAABAwMBAAAAAAAAAAAAAAAAAQMDAQICAgICAAAAAAAAAAEDAwEAAgIAAAAAAAAAAAABAwMBAQEBAQEBAQEBAQEBAQMDAwMDAwMDAQEDAwMDAwMDAwMDAwMDAwEBAwMDAwMDAwMDAwMBAQEBAQEBAQYMCAAQMKAAAh+QQJBQADACwAAAAAEAAQAAAC59w2MzMzM8YYY4wxxhhjjDEMwzAMwzAMwzAMwzAMwzAMwzAMwzAMwzAYDAaDQSAQCAQCgUAgEAgEAoNBQAAAAAAAAAAAAAACg0FAIAAAAAAAAAAAAAKDQUAgEAgEAgAAAAAAEDAwEAAAAAAAAAAAAAAAABAwMBAgICAgIAAAAAAAAAAQMDAQACAgAAAAAAAAAAAAEDAwECAgIAAAAAAAAAAAABAwMBAQEBAQEBAQEBAQEBAQMDAwMDAwMDAQEDAwMDAwMDAwMDAwMDAwEBAwMDAwMDAwMDAwMBAQEBAQEBAQYMCAAQMKAAAh+QQJBQADACwAAAAAEAAQAAAC59w2MzMzM8YYY4wxxhhjjDEMwzAMwzAMwzAMwzAMwzAMwzAMwzAMwzAYDAaDQSAQCAQCgUAgEAgEAoNBQCAAAAAAAAAAAAACg0FAIBAIBAIAAAAAAAKDQQAAAAAAAAAAAAAAEDAwECAgICAgAAAAAAAAABAwMBAAICAAAAAAAAAAAAAQMDAQICAgAAAAAAAAAAAAEDAwEAAgIAAAAAAAAAAAABAwMBAQEBAQEBAQEBAQEBAQMDAwMDAwMDAQEDAwMDAwMDAwMDAwMDAwEBAwMDAwMDAwMDAwMBAQEBAQEBAQYMCAAQMKAAAh+QQJBQADACwAAAAAEAAQAAAC59w2MzMzM8YYY4wxxhhjjDEMwzAMwzAMwzAMwzAMwzAMwzAMwzAMwzAYDAaDQSAQCAQCgUAgEAgEAoNBQCAQCAQCAAAAAAACg0EAAAAAAAAAAAAAAAKDQUAgEAgEAAAAAAAAEDAwEAAgIAAAAAAAAAAAABAwMBAgICAAAAAAAAAAAAAQMDAQACAgAAAAAAAAAAAAEDAwEAAgIAAAAAAAAAAAABAwMBAQEBAQEBAQEBAQEBAQMDAwMDAwMDAQEDAwMDAwMDAwMDAwMDAwEBAwMDAwMDAwMDAwMBAQEBAQEBAQYMCAAQMKAAAh+QQJBQADACwAAAAAEAAQAAAC59w2MzMzM8YYY4wxxhhjjDEMwzAMwzAMwzAMwzAMwzAMwzAMwzAMwzAYDAaDQSAQCAQCgUAgEAgEAoNBAAAAAAAAAAAAAAACg0FAIBAIBAAAAAAAAAKDQQAgEAAAAAAAAAAAEDAwECAgIAAAAAAAAAAAABAwMBAAICAAAAAAAAAAAAAQMDAQACAgAAAAAAAAAAAAEDAwEAAAAAAAAAAAAAAAABAwMBAQEBAQEBAQEBAQEBAQMDAwMDAwMDAQEDAwMDAwMDAwMDAwMDAwEBAwMDAwMDAwMDAwMBAQEBAQEBAQYMCAAQMKAAA7" rel="icon" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
-    <!--    StyleSheet-->
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css'>
+  <link rel="stylesheet" href="./style.css">
+  <link id="page_favicon"
+    href="data:image/x-icon;base64,R0lGODlhEAAQAPEAAAAAADY2Ngz3KAAAACH5BAkFAAMAIf8LTkVUU0NBUEUyLjADAQAAACwAAAAAEAAQAAAC59w2MzMzM8YYY4wxxhhjjDEMwzAMwzAMwzAMwzAMwzAMwzAMwzAMwzAYDAaDQSAQCAQCgUAgEAgEAoNBQCAQCAQAAAAAAAACg0EAIBAAAAAAAAAAAAKDQUAgEAAAAAAAAAAAEDAwEAAgIAAAAAAAAAAAABAwMBAAICAAAAAAAAAAAAAQMDAQAAAAAAAAAAAAAAAAEDAwECAgIAAAAAAAAAAAABAwMBAQEBAQEBAQEBAQEBAQMDAwMDAwMDAQEDAwMDAwMDAwMDAwMDAwEBAwMDAwMDAwMDAwMBAQEBAQEBAQYMCAAQMKAAAh+QQJBQADACwAAAAAEAAQAAAC59w2MzMzM8YYY4wxxhhjjDEMwzAMwzAMwzAMwzAMwzAMwzAMwzAMwzAYDAaDQSAQCAQCgUAgEAgEAoNBACAQAAAAAAAAAAACg0FAIBAAAAAAAAAAAAKDQQAgEAAAAAAAAAAAEDAwEAAgIAAAAAAAAAAAABAwMBAAAAAAAAAAAAAAAAAQMDAQICAgAAAAAAAAAAAAEDAwECAAAAAAAAAAAAAAABAwMBAQEBAQEBAQEBAQEBAQMDAwMDAwMDAQEDAwMDAwMDAwMDAwMDAwEBAwMDAwMDAwMDAwMBAQEBAQEBAQYMCAAQMKAAAh+QQJBQADACwAAAAAEAAQAAAC59w2MzMzM8YYY4wxxhhjjDEMwzAMwzAMwzAMwzAMwzAMwzAMwzAMwzAYDAaDQSAQCAQCgUAgEAgEAoNBQCAQAAAAAAAAAAACg0EAIBAAAAAAAAAAAAKDQQAgEAAAAAAAAAAAEDAwEAAAAAAAAAAAAAAAABAwMBAgICAAAAAAAAAAAAAQMDAQIAAAAAAAAAAAAAAAEDAwECAgAAAAAAAAAAAAABAwMBAQEBAQEBAQEBAQEBAQMDAwMDAwMDAQEDAwMDAwMDAwMDAwMDAwEBAwMDAwMDAwMDAwMBAQEBAQEBAQYMCAAQMKAAAh+QQJBQADACwAAAAAEAAQAAAC59w2MzMzM8YYY4wxxhhjjDEMwzAMwzAMwzAMwzAMwzAMwzAMwzAMwzAYDAaDQSAQCAQCgUAgEAgEAoNBACAQAAAAAAAAAAACg0EAIBAAAAAAAAAAAAKDQQAAAAAAAAAAAAAAEDAwECAgIAAAAAAAAAAAABAwMBAgAAAAAAAAAAAAAAAQMDAQICAAAAAAAAAAAAAAEDAwECAgICAgIAAAAAAAABAwMBAQEBAQEBAQEBAQEBAQMDAwMDAwMDAQEDAwMDAwMDAwMDAwMDAwEBAwMDAwMDAwMDAwMBAQEBAQEBAQYMCAAQMKAAAh+QQJBQADACwAAAAAEAAQAAAC59w2MzMzM8YYY4wxxhhjjDEMwzAMwzAMwzAMwzAMwzAMwzAMwzAMwzAYDAaDQSAQCAQCgUAgEAgEAoNBACAQAAAAAAAAAAACg0EAAAAAAAAAAAAAAAKDQUAgEAAAAAAAAAAAEDAwECAAAAAAAAAAAAAAABAwMBAgIAAAAAAAAAAAAAAQMDAQICAgICAgAAAAAAAAEDAwEAAAAAAAAAAAAAAAABAwMBAQEBAQEBAQEBAQEBAQMDAwMDAwMDAQEDAwMDAwMDAwMDAwMDAwEBAwMDAwMDAwMDAwMBAQEBAQEBAQYMCAAQMKAAAh+QQJBQADACwAAAAAEAAQAAAC59w2MzMzM8YYY4wxxhhjjDEMwzAMwzAMwzAMwzAMwzAMwzAMwzAMwzAYDAaDQSAQCAQCgUAgEAgEAoNBAAAAAAAAAAAAAAACg0FAIBAAAAAAAAAAAAKDQUAAAAAAAAAAAAAAEDAwECAgAAAAAAAAAAAAABAwMBAgICAgICAAAAAAAAAQMDAQAAAAAAAAAAAAAAAAEDAwECAgICAgAAAAAAAAABAwMBAQEBAQEBAQEBAQEBAQMDAwMDAwMDAQEDAwMDAwMDAwMDAwMDAwEBAwMDAwMDAwMDAwMBAQEBAQEBAQYMCAAQMKAAAh+QQJBQADACwAAAAAEAAQAAAC59w2MzMzM8YYY4wxxhhjjDEMwzAMwzAMwzAMwzAMwzAMwzAMwzAMwzAYDAaDQSAQCAQCgUAgEAgEAoNBQCAQAAAAAAAAAAACg0FAAAAAAAAAAAAAAAKDQUAgAAAAAAAAAAAAEDAwECAgICAgIAAAAAAAABAwMBAAAAAAAAAAAAAAAAAQMDAQICAgICAAAAAAAAAAEDAwEAAgIAAAAAAAAAAAABAwMBAQEBAQEBAQEBAQEBAQMDAwMDAwMDAQEDAwMDAwMDAwMDAwMDAwEBAwMDAwMDAwMDAwMBAQEBAQEBAQYMCAAQMKAAAh+QQJBQADACwAAAAAEAAQAAAC59w2MzMzM8YYY4wxxhhjjDEMwzAMwzAMwzAMwzAMwzAMwzAMwzAMwzAYDAaDQSAQCAQCgUAgEAgEAoNBQAAAAAAAAAAAAAACg0FAIAAAAAAAAAAAAAKDQUAgEAgEAgAAAAAAEDAwEAAAAAAAAAAAAAAAABAwMBAgICAgIAAAAAAAAAAQMDAQACAgAAAAAAAAAAAAEDAwECAgIAAAAAAAAAAAABAwMBAQEBAQEBAQEBAQEBAQMDAwMDAwMDAQEDAwMDAwMDAwMDAwMDAwEBAwMDAwMDAwMDAwMBAQEBAQEBAQYMCAAQMKAAAh+QQJBQADACwAAAAAEAAQAAAC59w2MzMzM8YYY4wxxhhjjDEMwzAMwzAMwzAMwzAMwzAMwzAMwzAMwzAYDAaDQSAQCAQCgUAgEAgEAoNBQCAAAAAAAAAAAAACg0FAIBAIBAIAAAAAAAKDQQAAAAAAAAAAAAAAEDAwECAgICAgAAAAAAAAABAwMBAAICAAAAAAAAAAAAAQMDAQICAgAAAAAAAAAAAAEDAwEAAgIAAAAAAAAAAAABAwMBAQEBAQEBAQEBAQEBAQMDAwMDAwMDAQEDAwMDAwMDAwMDAwMDAwEBAwMDAwMDAwMDAwMBAQEBAQEBAQYMCAAQMKAAAh+QQJBQADACwAAAAAEAAQAAAC59w2MzMzM8YYY4wxxhhjjDEMwzAMwzAMwzAMwzAMwzAMwzAMwzAMwzAYDAaDQSAQCAQCgUAgEAgEAoNBQCAQCAQCAAAAAAACg0EAAAAAAAAAAAAAAAKDQUAgEAgEAAAAAAAAEDAwEAAgIAAAAAAAAAAAABAwMBAgICAAAAAAAAAAAAAQMDAQACAgAAAAAAAAAAAAEDAwEAAgIAAAAAAAAAAAABAwMBAQEBAQEBAQEBAQEBAQMDAwMDAwMDAQEDAwMDAwMDAwMDAwMDAwEBAwMDAwMDAwMDAwMBAQEBAQEBAQYMCAAQMKAAAh+QQJBQADACwAAAAAEAAQAAAC59w2MzMzM8YYY4wxxhhjjDEMwzAMwzAMwzAMwzAMwzAMwzAMwzAMwzAYDAaDQSAQCAQCgUAgEAgEAoNBAAAAAAAAAAAAAAACg0FAIBAIBAAAAAAAAAKDQQAgEAAAAAAAAAAAEDAwECAgIAAAAAAAAAAAABAwMBAAICAAAAAAAAAAAAAQMDAQACAgAAAAAAAAAAAAEDAwEAAAAAAAAAAAAAAAABAwMBAQEBAQEBAQEBAQEBAQMDAwMDAwMDAQEDAwMDAwMDAwMDAwMDAwEBAwMDAwMDAwMDAwMBAQEBAQEBAQYMCAAQMKAAA7"
+    rel="icon" type="image/x-icon">
 
-    <title>Sharwan Solanki</title>
 </head>
 
-<body style="overflow-x: hidden; position: relative; margin: 0; padding: 0; font-family: 'Ubuntu', sans-serif;"
-    onload="socialWid()">
-    <!-- *****************************************************HOME***************************************************** -->
-    <div style="width: 100vw; height: 100vh; background-color: #000000;">
-        <canvas id="canvas" style="position: absolute; height: 100vh; width: 100vw;"></canvas>
-        <div id="home" style="position: relative; width: inherit; height: inherit;">
-            <div style="width: 100vw; height: 100vh; position: absolute;">
-                <div class="overlay" id="nav">
-                    <nav>
-                        <div class="nav-brand">
-                            <a title="All major coding sites Handle" href="/" class="brand">NotSharwan</a>
-                        </div>
-                    </nav>
-                    <div class="nav-items" id="target">
-                        <p><a href="http://hits.dwyl.com/NotSharwan/notsharwangithubio"><img
-                                    src="http://hits.dwyl.com/NotSharwan/notsharwangithubio.svg" alt="HitCount" /></a>
-                        </p>
-                    </div>
+<body>
+  <!-- partial:index.partial.html -->
+  <section class="hero is-fullheight">
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-3 is-flex">
+            <div class="column-child sidebar shadow">
+              <div class="sidebar-header has-text-centered">
+                <img
+                  src="https://media-exp1.licdn.com/dms/image/C5603AQGQy7UPYxwNHQ/profile-displayphoto-shrink_200_200/0?e=1594857600&v=beta&t=bUQ_6ik0hRpgRChfqq4F1OmEK7TsUQdoMSWZYK3PWp8"
+                  alt="Avatar" class="sidebar-image">
+                <h2 class="header-name">Sharwan Solanki</h2>
+                <h5 id="changeText">CS Undergrad.</h5>
+                <div class="social-icons">
+                  <a href="https://facebook.com/notsharwan"><i class="fab fa-facebook icon"></i></a>
+                  <a href="https://twitter.com/notsharwan"><i class="fab fa-twitter icon"></i></a>
+                  <a href="https://github.com/notsharwan"><i class="fab fa-github icon"></i></a>
+                  <a href="https://www.linkedin.com/in/notsharwan/"><i class="fab fa-linkedin icon"></i></a>
+                  <a href="https://instagram.com/sharrwann/"><i class="fab fa-instagram icon"></i></a>
                 </div>
-                <div style="top: 35%; position: relative;">
-                    <div class="home-content">
-                        <div class="details">
-                            <h1>Sharwan Solanki</h1>
-                            <h2 id="changeText">CS Undergrad.</h2>
-                        </div>
-                    </div>
+                <div class="resume">
+                  <a href="./resume.pdf" class="sidebar-link">
+                    Resume
+                  </a>
                 </div>
+              </div>
             </div>
+          </div>
+          <div class="column is-flex">
+            <div class="column-child terminal shadow">
+              <div class="terminal-bar dark-mode">
+                <div class="icon-btn close"></div>
+                <div class="icon-btn min"></div>
+                <div class="icon-btn max"></div>
+                <div class="terminal-bar-text is-hidden-mobile dark-mode-text">guest@NotSharwan: ~</div>
+              </div>
+              <div class="terminal-window primary-bg" onclick="document.getElementById('dummyKeyboard').focus();">
+                <div class="terminal-output" id="terminalOutput">
+                  <div class="terminal-line">
+                    <span class="help-msg">Welcome to Sharwan's Portfolio — Type <span class="code">help</span>
+                      for a list of supported commands.</span>
+                  </div>
+                </div>
+                <div class="terminal-line">
+                  <span class="success">➜</span> <span class="directory">~</span> <span class="user-input"
+                    id="userInput"></span>
+                  <input type="text" id="dummyKeyboard" class="dummy-keyboard">
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>
+          Made with <i class="fas fa-heart icon"></i> by <a href="http://notsharwan.github.io/ ">Sharwan Solanki</a>.
+        </p>
+      </div>
+    </footer>
+  </section>
+  <!-- partial -->
+  <script src='https://use.fontawesome.com/releases/v5.3.1/js/all.js'></script>
+  <script src="./script.js"></script>
 
-    <div id="soc" class="social">
-        <span><a target="_blank" href="https://github.com/notsharwan"><i class="fa fa-github"
-                    style="font-size: 2.5rem; color: #ffffff"></i></a></span>
-        <span><a target="_blank" href="https://www.linkedin.com/in/notsharwan/"><i class="fa fa-linkedin-square"
-                    style="font-size: 2.5rem; color: #0077b5"></i></a></span>
-        <span><a target="_blank" href="https://www.facebook.com/notsharwan"><i class="fa fa-facebook-square"
-                    style="font-size: 2.5rem; color: #4267b2"></i></a></span>
-        <span><a target="_blank" href="https://twitter.com/notsharwan"><i class="fa fa-twitter"
-                    style="font-size: 2.5rem; color: #1da1f2"></i></a></span>
-        <span><a target="_blank" href="https://instagram.com/sharrwann"><i class="fa fa-instagram"
-                    style="font-size: 2.5rem; color:#3f729b"></i></a></span>
-        <span><a target="_blank" href="mailto:sharwansolanki01@gmail.com"><i class="fa fa-google"
-                    style="font-size: 2.5rem; color: #cf5e54"></i></a></span>
-    </div>
 </body>
 
 </html>
