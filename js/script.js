@@ -1,0 +1,12 @@
+/*Smooth Scroll on clicking Nav Links*/
+window.onscroll = function(){"use strict"; if((document.documentElement.scrollTop >= 5 || document.body.scrollTop >= 5) && window.innerWidth < 800){document.getElementById("soc").style['background-color'] = '#1B1B1B'; console.log(123);}else{document.getElementById("soc").style['background-color'] = '';} if(document.body.scrollTop >= 40 || document.documentElement.scrollTop >= 40 || e.classList.contains("open")){document.getElementById('nav').style['background-color'] = '#000000';}else{document.getElementById('nav').style.backgroundColor = '';} if(document.body.scrollTop >= 3*window.innerHeight || document.documentElement.scrollTop >= 3*window.innerHeight){let item = document.querySelectorAll('.active'); item[0].className = 'single';var items = document.querySelectorAll('.single'); items[3].className = 'active';}else if(document.body.scrollTop >= 2*window.innerHeight || document.documentElement.scrollTop >= 2*window.innerHeight){var item = document.querySelectorAll('.active'); item[0].className = 'single';var items = document.querySelectorAll('.single'); items[2].className = 'active';}else if(document.body.scrollTop >= 1*window.innerHeight || document.documentElement.scrollTop >= 1*window.innerHeight){var item = document.querySelectorAll('.active'); item[0].className = 'single';var items = document.querySelectorAll('.single'); items[1].className = 'active';}else{var item = document.querySelectorAll('.active'); item[0].className = 'single';var items = document.querySelectorAll('.single'); items[0].className = 'active';}}
+
+/*Change Color of active links on Nav Bar*/
+let tar = document.getElementById("target");let e = document.getElementById("toggle"); let nelem = document.getElementById("nav");
+function active(a){let item = document.querySelectorAll('.active'); item[0].className = 'single'; a.className = 'active';
+document.querySelector("#contact").scrollIntoView({behavior: "smooth"}); e.classList.remove("open"); tar.classList.add("nav-items"); tar.classList.remove("toggeled"); /*nelem.style.backgroundColor='';*/}
+
+let text = ["(~) Noobie", "Programmer .\\n", "StillLearning :/",'CS Undergrad.' ];
+var counter = 1;var elem = document.getElementById("changeText");setInterval(change, 1500);function change(){elem.classList.add('hide');setTimeout(function () {elem.innerHTML = text[counter]; elem.classList.remove('hide'); counter++;if (counter >= text.length) {counter = 0;}}, 500);}
+
+
